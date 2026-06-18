@@ -8,8 +8,8 @@ ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
     PATH=/usr/local/cargo/bin:$PATH 
 
-RUN rustup toolchain install 1.93.0
-RUN rustup default 1.93
+RUN rustup toolchain install 1.96.0
+RUN rustup default 1.96
 RUN rustc --version
 
 RUN rustup target add armv7-linux-androideabi
