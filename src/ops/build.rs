@@ -549,7 +549,7 @@ fn build_manifest(
     <application {application_attrs} >
         {services}
         <activity {activity_attrs} >
-            <meta-data android:name="android.app.lib_name" android:value="{target_name}" />
+            <meta-data android:name="android.app.lib_name" android:value="{target_name}" android:exported="true" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
